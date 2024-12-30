@@ -402,6 +402,16 @@ class Ecomail
         return $this->post($url, $data);
     }
 
+    /**
+     * @param int $id ID template
+     * @return array|stdClass|string
+     */
+    public function getTemplate($id)
+    {
+        $url = $this->joinString('template/', $id);
+        return $this->get($url);
+    }
+
 
     // === Domains ===
 
