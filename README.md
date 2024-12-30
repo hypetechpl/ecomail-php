@@ -9,6 +9,26 @@
 composer require ecomailcz/ecomail
 ```
 
+Update composer.json to use this fork:
+```json
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/hypetechpl/ecomail-php"
+    }
+  ],
+  "require": {
+    "ecomailcz/ecomail": "dev-master"
+  }
+}
+```
+
+```shell
+composer update
+```
+
+
 # Usage
 
 ```php
